@@ -2,36 +2,9 @@
 <html lang="en">
     <!--기본 틀-->
     <style>
-        .logo , .search {
-            display: flex;
-            justify-content: center;
-        }
-        .login ul {
-            display: inline-block;
-            left: 1500px;
-            position: absolute;
-            top: 80px;
-        }
-        li {
-            display: inline-block;
-        }
-        .menu ul {
-            display: flex;
-            justify-content: space-around;
-            margin: 15px;
-        }
-        .menu{
-            border: lightgray solid;
-        }
-        .menu ul li {
-            margin: 5px;
-            padding: 20px;
-            border-left: solid 1px lightgrey;
-            border-right: solid 1px lightgrey;
-            font-size: 20px;
-        }
     </style>
 <head>
+    <link href="./CSS/main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./images/thumb.png">
     <meta property="og:title" content="들어오지 마셈" />
@@ -54,9 +27,8 @@
         </div>
         <div class="login">
             <ul>
-                <li>로그인</li>
-                <li>회원가입</li>
-                <li>비밀번호</li>
+                <li><a href="./login.html">로그인</a>></li>
+                <li><a href="./signin.html">회원가입</a>></li>
             </ul>
         </div>
     </header>
@@ -71,12 +43,36 @@
         </div>
     </menu>
     <div class="main">
-        <ul>
-            <li>네이버</li>
-            <li>카카오</li>
-            <li>레진</li>
-            <li>탑툰</li>
-        </ul>
+        <ul> <!--  -->
+            <div class="isaid">김성모가 박태준이랑 같이 연재를 했다? 이거 대작일지도..?</div>
+            <li><div class="container">
+                <img src="../images/n-783054.jpg" class="tumb">
+                <ul>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=71">최신화</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=70">최신화-1</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=69">최신화-2</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=1">정주행</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/list?titleId=783054">전체보기</a></li>
+                </ul>
+                <div class="our rating"><button>점수</button></div>
+                <div class="they rating"><button>점수</button></div>
+            </div></li>
+            <div class="isaid">미션을 깨면 카드를 준다? 심지어 훔쳐보기 까지!?</div>
+            <li><div class="container">
+                <img src="../images/n-783052.jpg" class="tumb">
+                <ul>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=18">최신화</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=17">최신화-1</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=16">최신화-2</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=1">정주행</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/list?titleId=783052">전체보기</a></li>
+                </ul>
+                <div class="our rating"><button>점수</button></div>
+                <div class="they rating"><button>점수</button></div>
+            </div></li>
+
+
+        </ul><!-- ../images/n-783052.jpg -->
     </div>
     <div></div>
 </body>

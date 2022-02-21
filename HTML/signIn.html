@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="./CSS/main.css" rel="stylesheet">
+    <link href="./CSS/signIn.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/thumb.png">
     <meta property="og:title" content="들어오지 마셈" />
     <meta property="og:description" content="뭐보지? 하믄 들어와" />
@@ -42,7 +43,23 @@
             </ul>
         </div>
     </menu>
-    <div class="main"></div>
+    <div id="container">
+        <div class="signIn">
+          <div class="sign"><label for="email">이메일 주소</label><input type="email" name="email" id="email">
+          <p class="can">사용 가능한 이메일입니다.</p>
+          <p class="cant">사용 불가능한 이메일입니다.</p>
+        </div>
+          <div class="sign"><label for="password">비밀번호</label><input type="password" name="password"></div>
+          <div class="sign"><label for="password_check">비밀번호 확인</label><input type="password" name="password_check"></div>
+          <div class="sign"><label for="name">이름</label><input type="text" name="name"></div>
+          <div class="sign"><label for="nick">닉네임</label><input type="text" name="nick">
+          <p class="can">사용 가능한 닉네임입니다.</p>
+          <p class="cant">사용 불가능한 닉네임입니다.</p><br>
+          <input type="checkbox" class="check" id="auto"><label for="auto">약관과 개인정보처리방침에 동의합니다.</label>
+          </div>
+          <button class="submit">가입하기</button>
+        </div>
+      </div>
     <div></div>
 </body>
 </html>

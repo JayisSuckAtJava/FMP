@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="./CSS/main.css" rel="stylesheet">
+    <link href="./CSS/login.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/thumb.png">
     <meta property="og:title" content="들어오지 마셈" />
     <meta property="og:description" content="뭐보지? 하믄 들어와" />
@@ -42,7 +43,14 @@
             </ul>
         </div>
     </menu>
-    <div class="main"></div>
-    <div></div>
+    <div class="loginForm">
+        <input type="text" placeholder="아이디를 입력하세요." class="id">
+        <input type="password" placeholder="비밀번호를 입력하세요." class="pw">
+        <input type="submit" class="login" value="로그인">
+        <label class="loginCheck">
+          <input type="checkbox" class="check" id="auto"><label for="auto">자동 로그인</label>
+        </label>
+        <!--loginCheck-->
+      </div>
 </body>
 </html>
