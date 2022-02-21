@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--기본 틀-->
+<style>
+    .logo,
+    .search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login ul {
+        display: inline-block;
+        left: 1500px;
+        position: absolute;
+        top: 80px;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    .menu {
+        border: lightgray solid;
+    }
+
+    .menu ul li {
+        margin: 5px;
+        padding: 20px;
+        border-left: solid 1px lightgrey;
+        border-right: solid 1px lightgrey;
+        font-size: 20px;
+    }
+
+    .postSubmit {
+        margin: 40px 0;
+    }
+
+    .postSubmit a {
+        display: block;
+        font-size: 16px;
+        background: #8a7eb3;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px;
+        width: 60px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .note-btn-group.note-view {
+        display: none;
+    }
+
+    .titleWrite {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 30px 0 20px 15px;
+    }
+
+    .titleWrite input {
+        width: 600px;
+        padding: 5px;
+        height: 12px;
+    }
+
+    .note-editable {
+        line-height: 1em;
+    }
+
+    .note-statusbar {
+        display: none;
+    }
+
+    #title {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 30px 20px 15px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/thumb.png">
+    <meta property="og:title" content="들어오지 마셈" />
+    <meta property="og:description" content="뭐보지? 하믄 들어와" />
+    <meta property="og:image" content="./images/thumb.png" }" />
+    <title>ㅇㅌㅊㅊ</title>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo">
+            <h1><a href="./main.html">ㅇㅌㅊㅊ!</a></h1>
+        </div>
+        <div class="search">
+            <select>
+                <option>네이버</option>
+                <option>탑툰</option>
+            </select>
+            <input type="text" id="main_serach"> <button>검색하기</button>
+        </div>
+        <div class="login">
+            <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>비밀번호</li>
+            </ul>
+        </div>
+    </header>
+    <menu>
+        <div class="menu">
+            <ul>
+                <li><a href="./top.html"> T O P </a></li>
+                <li><a href="./today.html"> 오 늘 의 추 천 </a></li>
+                <li><a href="./genre.html"> 장 르 </a></li>
+                <li><a href="./bbs.html"> 자 유 게 시 판 </a></li>
+            </ul>
+        </div>
+    </menu>
+
+    <div id="container">
+        <div class="mainTop cf">
+            <h2>전체</h2>
+            <h3><strong>GUIDE</strong><span> 자유롭게 글을 올리실 수 있습니다. 자유로운 만큼 더욱 더 예절을 지켜주시기 바랍니다.</span></h3>
+            <p class="mainRec btn"><a href="#">추천글</a></p>
+            <p class="mainWrite btn"><a href="#">글쓰기</a></p>
+        </div>
+        <p id="title">카테고리:</p>
+
+        <select>
+            <option value="volvo">난</option>
+            <option value="saab">사랑의</option>
+            <option value="fiat">경찰관</option>
+            <option value="audi" selected>제목</option>
+        </select>
+
+
+        <div class="titleWrite">
+            <p>제목: <input type="text"></p>
+        </div>
+        <div id="summernote"></div>
+        <div class="postSubmit">
+            <a href="bbs.html" class="btn">작성</a>
+
+        </div>
+    
+    </div>
+    
+
+</body>
+
+</html>
