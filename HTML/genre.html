@@ -3,28 +3,32 @@
     <!--기본 틀-->
     <style>
         .genreCheck {
-            display: flex;
-        justify-content: center;
-            }
-        .article {
-            display: inline-block;
-            border: 1px solid;
-            border-radius: 15px;
-            height: 200px;
-            width: 160px;
-        }
-        .article img {
-            display: inline-block;
-            margin: auto 0px;
-            padding: 15px;
-        }
-        .article p {
-            
-        }
+    display: flex;
+justify-content: center;
+    }
+    .article input {
+        display: none;
+    }
+    .article input:checked {
+        display: none;
+    }
+    .article input:checked + text {
+        display: none;
+    }
+    .article input:checked + text + text {
+        display: inline-block;
+    }
+    .article input + text {
+        display: inline-block;
+    }
+    .article input + text + text{
+        display: none;
+    }
 
     </style>
 <head>
     <meta charset="UTF-8">
+    <link href="./CSS/content.css" rel="stylesheet">
     <link href="./CSS/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/thumb.png">
     <meta property="og:title" content="들어오지 마셈" />
@@ -80,7 +84,10 @@
     </div>
     <hr>
     <div class="content">
-        <div class="article"><img src="../images/n-783052.jpg"><p class="allisaid">미션을 깨면 카드를 준다? 심지어 훔쳐보기 까지!?</p></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783052"><img src="../images/n-783052.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>미션을 깨면 카드를 준다? 심지어 훔쳐보기 까지!?</text><text>여유공간</text></label></p></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783054"><img src="../images/n-783054.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>김성모가 박태준이랑 같이 연재를 했다? 이거 대작일지도..?</text><text>여유공간</text></label></p></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=597478"><img src="../images/n-597478.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>왕뚝배기 동원이 머리 언제 작아졌음?</text><text>여유공간</text></label></p></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=183559"><img src="../images/n-183559.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>도대체 이 신의탑은 언제 끝나냐 원피스 보다 오래갈듯.</text><text>여유공간</text></label></p></div>
     </div>
     <footer>
         <hr>
