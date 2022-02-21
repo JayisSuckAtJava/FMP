@@ -2,6 +2,23 @@
 <html lang="en">
     <!--기본 틀-->
     <style>
+        .genreCheck {
+            display: flex;
+        justify-content: center;
+            }
+        .article {
+            display: inline-block;
+            border: 1px solid;
+            border-radius: 15px;
+            height: 200px;
+            width: 160px;
+        }
+        .article img {
+            display: inline-block;
+            margin: auto 0px;
+            padding: 15px;
+        }
+
     </style>
 <head>
     <meta charset="UTF-8">
@@ -14,7 +31,7 @@
 </head>
 
 <body>
-    <header class="head">
+    <header class="head" id="header">
         <div class="logo">
             <h1><a href="./main.html">ㅇㅌㅊㅊ!</a></h1>
         </div>
@@ -41,8 +58,32 @@
                 <li><a href="./bbs.html"> 자 유  게 시 판 </a></li>  
             </ul>
         </div>
-    </menu>
-    <div class="main"></div>
-    <div></div>
+    </menu><!-- 드라마 학원 액션 옴니버스 판타지 공포/스릴러/미스터리 개그 일상 순정/감성/로맨스 스포츠 BL+백합 -->
+    <div class="genreCheck">
+        <form action="">
+        <input type="checkbox" id="drama">드라마
+        <input type="checkbox" id="school">학원
+        <input type="checkbox" id="action">액션
+        <input type="checkbox" id="omnibus">옴니버스
+        <input type="checkbox" id="fantasi">판타지
+        <input type="checkbox" id="scary">공포/스릴러/미스터리
+        <input type="checkbox" id="gag">개그
+        <input type="checkbox" id="life">일상
+        <input type="checkbox" id="romance">로맨스/순정/감성
+        <input type="checkbox" id="sport">스포츠
+        <input type="checkbox" id="gay">BL+백합
+        <input type="submit" id="submit" value="적용">
+    </form>
+    </div>
+    <hr>
+    <div class="content">
+        <div class="article"><img src="../images/n-783052.jpg"><p class="">미션을 깨면 카드를 준다? 심지어 훔쳐보기 까지!?</p></div>
+    </div>
+    <footer>
+        <hr>
+        <div id="scroll">
+            <a href="#header"><img src="../images/scroll.png"></a>
+        </div>
+    </footer>
 </body>
 </html>
