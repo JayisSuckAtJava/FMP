@@ -11,10 +11,8 @@
             justify-content: center;
         }
         .login ul {
-            display: inline-block;
-            left: 1500px;
-            position: absolute;
-            top: 80px;
+            display: flex;
+            justify-content: flex-end;
         }
         li {
             display: inline-block;
@@ -48,6 +46,43 @@
             height: 250px;
             border: solid;
             border-radius: 15px;
+        }
+        .tumb {
+            display: inline-block;
+            height: 235px;
+            border: solid 2px lightgray;
+            margin: 3px;
+            padding: 1px;
+        }
+        .container ul{
+            display: inline-block;
+            position: relative;
+            bottom: 15px;
+            margin: 0 0 7px 13px;
+            padding: 0 55px 0 19px;
+        }
+        .container ul li {
+            display: block;
+            position: relative;
+            margin: 8px;
+            font-size: 26px;
+            padding: 5px;
+            font-family: Arial,'나눔고딕',NanumGothic,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','맑은고딕',MalgunGothic,'돋움',Dotum,Sans-serif
+        }
+        .rating {
+            display: flex;
+            justify-content: flex-end;
+            left: 800px;
+        }
+        .rating button {
+            display: inline-block;
+            position: relative;
+            bottom: 180px;
+            margin: 20px;
+        }
+        .isaid {
+            display: flex;
+            justify-content: center;
         }
     </style>
 <head>
@@ -90,11 +125,36 @@
         </div>
     </menu>
     <div class="main">
-        <ul>
+        <ul> <!--  -->
+            <div class="isaid">사이트 주인이 써내리는 글귀</div>
             <li><div class="container">
-                
+                <img src="../images/n-783054.jpg" class="tumb">
+                <ul>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=71">최신화</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=70">최신화-1</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=69">최신화-2</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783054&no=1">정주행</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/list?titleId=783054">전체보기</a></li>
+                </ul>
+                <div class="our rating"><button>점수</button></div>
+                <div class="they rating"><button>점수</button></div>
             </div></li>
-        </ul>
+            <div class="isaid">사이트 주인이 써내리는 글귀</div>
+            <li><div class="container">
+                <img src="../images/n-783052.jpg" class="tumb">
+                <ul>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=18">최신화</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=17">최신화-1</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=16">최신화-2</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/detail?titleId=783052&no=1">정주행</a></li>
+                    <li><a href="https://comic.naver.com/webtoon/list?titleId=783052">전체보기</a></li>
+                </ul>
+                <div class="our rating"><button>점수</button></div>
+                <div class="they rating"><button>점수</button></div>
+            </div></li>
+
+
+        </ul><!-- ../images/n-783052.jpg -->
     </div>
     <div></div>
 </body>
