@@ -4,25 +4,22 @@
     <style>
         .genreCheck {
     display: flex;
-justify-content: center;
-    }
+    justify-content: center;
+    } 
     .article input {
         display: none;
     }
-    .article input:checked {
+    .article > label:nth-of-type(2) text {
         display: none;
+        position: relative;
+        bottom: 125px;
+        height: 180px;
+        background-color: beige;
     }
-    .article input:checked + text {
-        display: none;
-    }
-    .article input:checked + text + text {
+    text {
         display: inline-block;
-    }
-    .article input + text {
-        display: inline-block;
-    }
-    .article input + text + text{
-        display: none;
+        width: 160px;
+        height: 70px;
     }
 
     </style>
@@ -86,10 +83,26 @@ justify-content: center;
     </div>
     <hr>
     <div class="content">
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783052"><img src="../images/n-783052.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>미션을 깨면 카드를 준다? 심지어 훔쳐보기 까지!?</text><text>여유공간</text></label></p></div>
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783054"><img src="../images/n-783054.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>김성모가 박태준이랑 같이 연재를 했다? 이거 대작일지도..?</text><text>여유공간</text></label></p></div>
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=597478"><img src="../images/n-597478.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>왕뚝배기 동원이 머리 언제 작아졌음?</text><text>여유공간</text></label></p></div>
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=183559"><img src="../images/n-183559.jpg"></a><p class="allisaid"><label><input type="checkbox" value=""><text>도대체 이 신의탑은 언제 끝나냐 원피스 보다 오래갈듯.</text><text>여유공간dwdawdwaadawdawdawdawdawdawdawdawdawawawdwadawdawdawdawwawadwadawdaw</text></label></p></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783052"><img src="../images/n-783052.jpg"></a>
+            <label><input type="checkbox" onclick="firstButton(id)"  id="n-783052-f">
+                <text>미션을 깨면 카드를 준다? 심지어 훔쳐보기 까지!?</text></label>
+            <label><input type="checkbox" onclick="secondButton(id)"  id="n-783052-s">
+                <text>여유공간</text></label></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783054"><img src="../images/n-783054.jpg"></a>
+            <label><input type="checkbox" onclick="firstButton(id)"  id="n-783054-f">
+                <text>김성모가 박태준이랑 같이 연재를 했다? 이거 대작일지도..?</text></label>
+            <label><input type="checkbox" onclick="secondButton(id)"  id="n-783054-s">
+                <text>여유공간</text></label></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=597478"><img src="../images/n-597478.jpg"></a>
+            <label><input type="checkbox" onclick="firstButton(id)"  id="n-597478-f">
+                <text>왕뚝배기 동원이 머리 언제 작아졌음?</text></label>
+            <label><input type="checkbox" onclick="secondButton(id)"  id="n-597478-s">
+                <text>사이트 주인이 만든 글귀</text></label></div>
+        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=183559"><img src="../images/n-183559.jpg"></a>
+            <label><input type="checkbox" onclick="firstButton(id)"  id="n-183559-f">
+                <text>도대체 이 신의탑은 언제 끝나냐 원피스 보다 오래갈듯.</text></label>
+            <label><input type="checkbox" onclick="secondButton(id)"  id="n-183559-s">
+                <text>사이트 주인이 만든 글귀</text></label></div>
     </div>
     <footer>
         <hr>
@@ -97,5 +110,26 @@ justify-content: center;
             <a href="#header"><img src="../images/scroll.png"></a>
         </div>
     </footer>
+    <script>
+        function firstButton(article){
+            console.log(article);
+            const first =document.getElementById(article).nextElementSibling;
+            const second =document.getElementById(article).parentElement.nextElementSibling.lastElementChild;
+            console.log(first);
+            console.log(second);
+            first.style.display="none";
+            second.style.display='inline-block';    
+        }
+        function secondButton(article){
+            console.log(article)
+            const first =document.getElementById(article).nextElementSibling;
+            const second =document.getElementById(article).parentElement.previousElementSibling.lastElementChild;
+            console.log(first);
+            console.log(second);
+            first.style.display="none";
+            second.style.display='inline-block';
+        }
+
+    </script>
 </body>
 </html>

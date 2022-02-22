@@ -5,17 +5,17 @@
     border-radius: 15px;
     height: 200px;
     width: 160px;
+    background-color: azure;
+    margin: 15px;
 }
 .article img {
     display: inline-block;
     margin: auto 0px;
     padding: 15px;
 }
-.article p {
-    background-color: azure;
-}
 .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 15px;
 }
