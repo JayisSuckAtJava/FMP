@@ -12,14 +12,15 @@
     .article > label:nth-of-type(2) text {
         display: none;
         position: relative;
-        bottom: 125px;
+        bottom: 140px;
         height: 180px;
         background-color: beige;
     }
-    text {
-        display: inline-block;
-        width: 160px;
-        height: 70px;
+    .article button {
+        position: relative;
+        top: 135px;
+        left: 35px;
+        display: block;
     }
 
     </style>
@@ -83,26 +84,56 @@
     </div>
     <hr>
     <div class="content">
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783052"><img src="../images/n-783052.jpg"></a>
+        <div class="article">
+            <p>퀘스트 지상주의</p>
+            <a href="https://comic.naver.com/webtoon/list?titleId=783052"><img src="../images/n-783052.jpg"></a>
             <label><input type="checkbox" onclick="firstButton(id)"  id="n-783052-f">
                 <text>미션을 깨면 카드를 준다? 심지어 훔쳐보기 까지!?</text></label>
             <label><input type="checkbox" onclick="secondButton(id)"  id="n-783052-s">
-                <text>여유공간</text></label></div>
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=783054"><img src="../images/n-783054.jpg"></a>
+                <text>여유공간
+                    <button onClick="location.href='#'">댓글 더보기</button>
+                </text></label></div>
+
+        <div class="article">
+            <p>쇼미더 럭키짱!</p>
+            <a href="https://comic.naver.com/webtoon/list?titleId=783054"><img src="../images/n-783054.jpg"></a>
             <label><input type="checkbox" onclick="firstButton(id)"  id="n-783054-f">
                 <text>김성모가 박태준이랑 같이 연재를 했다? 이거 대작일지도..?</text></label>
             <label><input type="checkbox" onclick="secondButton(id)"  id="n-783054-s">
-                <text>여유공간</text></label></div>
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=597478"><img src="../images/n-597478.jpg"></a>
-            <label><input type="checkbox" onclick="firstButton(id)"  id="n-597478-f">
-                <text>왕뚝배기 동원이 머리 언제 작아졌음?</text></label>
+                <text>여유공간
+                    <button onClick="location.href='#'">댓글 더보기</button>
+                </text></label></div>
+
+        <div class="article">
+            <p>평범한 8반</p>
+            <a href="https://comic.naver.com/webtoon/list?titleId=597478"><img src="../images/n-597478.jpg"></a>
+            <label><input type="checkbox" onclick="firstButton(id)"  id="n-597478-f"> <!-- DB 에 웹툰별 AN(PK) 제작사-번호 -->
+                <text>왕뚝배기 동원이 머리 언제 작아졌음?                           <!-- 게시판도 /comment/AN -->
+                </text></label>
             <label><input type="checkbox" onclick="secondButton(id)"  id="n-597478-s">
-                <text>사이트 주인이 만든 글귀</text></label></div>
-        <div class="article"><a href="https://comic.naver.com/webtoon/list?titleId=183559"><img src="../images/n-183559.jpg"></a>
+                <text>사이트 주인이 만든 글귀
+                    <button onClick="location.href='#'">댓글 더보기</button>
+                </text></label></div>
+
+        <div class="article">
+            <p>신의 탑</p>
+            <a href="https://comic.naver.com/webtoon/list?titleId=183559"><img src="../images/n-183559.jpg"></a>
             <label><input type="checkbox" onclick="firstButton(id)"  id="n-183559-f">
                 <text>도대체 이 신의탑은 언제 끝나냐 원피스 보다 오래갈듯.</text></label>
             <label><input type="checkbox" onclick="secondButton(id)"  id="n-183559-s">
-                <text>사이트 주인이 만든 글귀</text></label></div>
+                <text>사이트 주인이 만든 글귀
+                    <button onClick="location.href='#'">댓글 더보기</button>
+                </text></label></div>
+        <div class="article">
+            <p>제목</p>
+            <a href="#"><img src="" alt="썸네일" style="height: 100px;"></a>
+            <label><input type="checkbox" onclick="firstButton(id)"  id="M-AN-f">
+                <text>해당 웹툰에 대한 설명? 내용</text></label>
+            <label><input type="checkbox" onclick="secondButton(id)"  id="M-AN-s">
+                <text>댓글 표시 - 더보기를 누를시 각 각 작품별로 따로 댓글 게시판으로 이동함.
+                    <button onClick="location.href='/comment?an=an'">댓글 더보기</button>
+                </text></label></div>
+
     </div>
     <footer>
         <hr>
