@@ -1,0 +1,13 @@
+package applify.dxcc.app.dao;
+
+import applify.dxcc.app.dto.DxccloginDto;
+import applify.dxcc.app.dto.WebtoonsDto;
+
+public interface DxccloginDao {
+
+	String login(String id);
+
+	void signin(DxccloginDto account);
+	List<WebtoonsDto> genre(WebtoonsDto webtoon);
+
+}

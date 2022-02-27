@@ -1,0 +1,10 @@
+package applify.dxcc.app.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DxccloginDao {
+
+	String login(String id);
+
+}

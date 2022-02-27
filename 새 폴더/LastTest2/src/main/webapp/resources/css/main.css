@@ -1,0 +1,152 @@
+
+body {
+    font-size: 0.75em;
+    font-family: Tahoma,±¼¸²,µ¸¿ò
+}
+.logo , .search {
+    display: flex;
+    justify-content: center;
+}
+.login ul {
+    display: flex;
+    justify-content: flex-end;
+}
+div li {
+    display: inline-block;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.menu{
+    border: lightsalmon solid;
+}
+.menu ul li {
+    margin: 5px;
+    padding: 20px;
+    border-left: solid 1px lightsalmon;
+    border-right: solid 1px lightsalmon;
+    font-size: 20px;
+}
+.search {
+position: relative;
+margin: 0 auto;
+padding: 26px 0;
+ width: 1096px;
+}
+.main, .main ul li {
+    display: block;
+}
+.container {
+    display: block;
+    height: 250px;
+    border: solid;
+    border-radius: 15px;
+}
+.tumb1 {
+    display: inline-block;
+    height: 235px;
+    width: 291px;
+    border: solid 2px lightgray;
+    margin: 3px;
+    padding: 1px;
+}
+.tumb2 {
+    display: inline-block;
+    height: 235px;
+    border: solid 2px lightgray;
+    margin: 3px;
+    padding: 1px;
+}
+.container ul{
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0 0 7px 13px;
+    padding: 0 55px 0 19px;
+}
+.container ul li {
+    display: block;
+    position: relative;
+    margin: 8px;
+    font-size: 26px;
+    padding: 5px;
+    font-family: Arial,'³ª´®°íµñ',NanumGothic,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','¸¼Àº°íµñ',MalgunGothic,'µ¸¿ò',Dotum,Sans-serif
+}
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    left: 800px;
+}
+.rating button {
+    display: inline-block;
+    position: relative;
+    bottom: 180px;
+    margin: 20px;
+}
+.isaid {
+    border: solid 2px lightgray;
+     width: 500px;
+     margin: auto;
+     font-size: 16px;
+     font-family: ¸¼Àº °íµñ;
+     background-color: lightsalmon;
+    color: whitesmoke;
+    padding : 3px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+    }
+a {
+    color:#3d6eda;;
+    text-decoration: none;
+}
+a:visited {
+    color: #3d6eda;;
+}
+#scroll {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+#scroll img {
+    width: 60px;
+}
+
+#tops {
+    background-color: #ffd3c1;
+}
+.top_notifi {
+    display: flex;
+    justify-content: center;
+}
+.top_notifi span {
+    display: block;
+    border: solid 2px black;
+    background-color: yellow;
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin: 5px;
+    padding: 7px;
+}
+.logged + li{
+    display: none;
+}
+.logged:checked + li {
+    display: inline-block;
+}
+.logged:checked + li + li {
+    display: none;
+} 
+
+footer {
+    text-align: center;
+    
+}
+
+textarea{
+    resize: none;
+}

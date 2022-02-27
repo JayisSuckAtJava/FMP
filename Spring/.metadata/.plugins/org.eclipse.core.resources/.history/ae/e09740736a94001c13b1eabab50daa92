@@ -1,0 +1,19 @@
+package applify.dxcc.app.dao;
+
+import org.apache.ibatis.session.SqlSession;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class DxccDaoImpl implements DxccDao {
+	
+	@Autowired
+	private SqlSessionFactory SqlSessionTemplate;
+
+	@Override
+	public String login(String id) {
+		return null;
+	}
+
+}

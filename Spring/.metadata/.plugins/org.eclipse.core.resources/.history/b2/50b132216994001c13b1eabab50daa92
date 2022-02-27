@@ -1,0 +1,12 @@
+package app.dxcc.appilfy.dto;
+
+public class BBSCommentsDto {
+	
+	int commentNum;
+	String id;
+	String comments;
+	String writeDate;
+	int rec;
+	String articleNum;
+	
+}

@@ -1,0 +1,7 @@
+
+.loginForm {position:relative; width:350px; margin:0 auto; padding: 20px 100px 40px; border-bottom: 1px solid lightsalmon;}
+.loginForm input {padding:15px 40px 15px 30px; width:250px; margin: 0 auto 20px auto; font-size:14px;}
+.check {
+width: 9px !important;
+display: inline-block !important;
+}

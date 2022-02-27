@@ -1,0 +1,11 @@
+package applify.dxcc.app.dao;
+
+import applify.dxcc.app.dto.DxccloginDto;
+
+public interface DxccloginDao {
+
+	String login(String id);
+
+	void signin(DxccloginDto account);
+
+}

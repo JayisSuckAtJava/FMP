@@ -1,0 +1,12 @@
+package app.dxcc.appilfy.dto;
+
+public class FreeBBSDto {
+	int articleNum;
+	String title;
+	String id;
+	String content;
+	String writeDate;
+	int views;
+	int rec;
+	int category;
+}

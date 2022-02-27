@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+              
+<mapper namespace="appilfy.dxcc.app.dao.DxccDao">
+	<!--<insert id="write" parameterType="article" useGeneratedKeys="true" keyProperty="articleNum" keyColumn="articleNum" >
+		INSERT INTO BBS VALUES(BBS_SEQ.NEXTVAL,#{id},#{title},#{content},SYSDATE)
+	</insert>
+	  --><!-- 
+	<select id="list" resultType="article">
+		SELECT *
+		FROM BBS
+		ORDER BY ARTICLENUM DESC
+	</select>
+	
+	<select id="content" parameterType="String" resultType="article">
+		SELECT *
+		FROM BBS
+		WHERE ARTICLENUM=#{articleNum}
+	</select>
+	
+	<select id="login" parameterType="String" resultType="String">
+		SELECT PASSWORD
+		FROM LOGIN
+		WHERE ID=#{id}
+	</select>
+	
+	<select id="delete" parameterType="String" >
+		DELETE
+		FROM BBS
+		WHERE ARTICLENUM=#{articleNum}
+	</select>
+	
+	<select id="updateForm" parameterType="String" resultType="article">
+		SELECT ARTICLENUM,TITLE,CONTENT,WRITEDATE
+		FROM BBS
+		WHERE ARTICLENUM=#{articleNum}
+	</select>
+	
+	<update id="update" parameterType="article">
+		update bbs
+		set title=#{title}, content=#{content}
+		where articleNum=#{articleNum}
+	</update>
+	
+		<select id="getCommentCount" parameterType="String" resultType="Integer" >
+		SELECT COUNT(*)
+		FROM COMMENTS
+		WHERE ARTICLENUM=#{articleNum}
+	</select>
+	
+ -->
+	
+</mapper>

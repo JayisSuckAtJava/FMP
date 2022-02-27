@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+              
+<mapper namespace="applify.dxcc.app.dao">
+
+	<select id="login" parameterType="String" resultType="String">
+		SELECT PASSWORD
+		FROM LOGIN
+		WHERE ID=#{id}
+	</select>
+	
+	<insert id="signin" parameterType="account">
+	INSERT INTO DXCCLOGIN (CLIENTNUMB,ID,PASSOWRD,SIGNINDATE,EMAIL,NICK)
+	VALUES (CLIENTNUMBS_SEQ.NEXTVAL,#{id},#{password},SYSDATE,#{email},#{nick})
+	</insert>
+	<!-- 장르별 선택 만들어야함. -->
+	<select id="genre" parameterType="webtoon" resultType="webtoon">
+	SELECT TITLE
+	FROM WEBTOONS
+	WHERE
+	DRAMA=#{drama} OR
+	SCHOOL=#{school} OR
+	OMNIBUS=#{omnibus} OR
+	FANTASI=#{fantasi} OR
+	HORO=#{horo} OR
+	GAG=#{gag} OR
+	LIFE=#{life} OR
+	ROMANCE=#{romance} OR
+	SPORT=#{sport} OR
+	LGBT=#{lgbt}
+	</select>
+	
+	<select id="list" resultType="webtoon">
+	SELECT *
+	FROM WEBTOONS
+	</select>	
+	
+	<select id="selectedList" parameterType="List" resultType="webtoon">
+	SELECT *
+	FROME WEBTOONS
+	WHERE TITLE=#{webtoon.title}
+	</select>
+
+
+	
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+<setting name="cacheEnabled" value="true"/>
+      <setting name="lazyLoadingEnabled" value="false"/>
+      <setting name="multipleResultSetsEnabled" value="true"/>
+      <setting name="useColumnLabel" value="true"/>
+      <setting name="useGeneratedKeys" value="false"/>
+      <setting name="defaultExecutorType" value="SIMPLE"/>
+      <setting name="defaultStatementTimeout" value="25000"/>
+<!-- 전통적인 데이터베이스 칼럼명 형태인 RANDOM_COLUMN을 CamelCase형태의 -->
+<!-- 자바 프로퍼티명 형태인 randomColumn으로 자동으로 매핑하도록 함 -->
+      <setting name="mapUnderscoreToCamelCase" value="false"/>
+      <setting name="jdbcTypeForNull" value="VARCHAR" />
+	</settings>
+	<!--  article 이라는 익명 지정을 하여서 그게 dto를 가르키게 만듬. 그러면 명령어 상에서 article로 정하면 다 그렇게 넘어감 -->
+	<typeAliases>
+		<typeAlias alias="webtoon" type="app.dxcc.appilfy.dto.WebtoonsDto"/>
+		<typeAlias alias="account" type="app.dxcc.appilfy.dto.DxccloginDto"/>
+		<typeAlias alias="BBS" type="app.dxcc.appilfy.dto.FreeBBSDto"/>
+		<typeAlias alias="wComment" type="app.dxcc.appilfy.dto.WebtoonCommentsDto"/>
+		<typeAlias alias="bComment" type="app.dxcc.appilfy.dto.BBSCommentsDto"/>
+	</typeAliases>
+	
+	
+
+</configuration>

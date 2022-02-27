@@ -1,0 +1,7 @@
+package app.dxcc.appilfy.dao;
+
+public interface DxccDao {
+
+	String login(String id);
+
+}

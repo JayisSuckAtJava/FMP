@@ -1,0 +1,59 @@
+
+    .logo,
+    .search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login ul {
+        display: inline-block;
+        left: 1500px;
+        position: absolute;
+        top: 80px;
+    }
+
+    .table > li {
+        display: inline-block;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    .menu {
+        border: lightgray solid;
+    }
+
+    .menu ul li {
+        
+        margin: 5px;
+        padding: 20px;
+        border-left: solid 1px lightgrey;
+        border-right: solid 1px lightgrey;
+        font-size: 20px;
+    }
+
+
+
+    .table {
+    border: solid;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    font-size: 13px;
+    width: 916px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.submit{
+        display: block;
+        font-size: 16px;
+        background: lightsalmon;
+        color: #fff;
+        padding: 10px;
+        width: 60px;
+        margin: 0 auto;
+        text-align: center;
+    }

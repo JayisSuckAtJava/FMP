@@ -1,0 +1,24 @@
+package applify.dxcc.app.dto;
+
+public class WebtoonsDto {
+	String articleNum;
+	String title;
+	int ourSub;
+	int thereSub;
+	int ourView;
+	int thereView;
+	int ourRec;
+	int thereRec;
+	String	drama;
+	String	school;
+	String	omnibus;
+	String	horo;
+	String	gag;
+	String	life;
+	String romance;
+	String sport;
+	String lgbt;
+	String email;
+	String nick;
+	
+}

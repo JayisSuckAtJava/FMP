@@ -1,0 +1,26 @@
+
+.signIn{width:280px; padding:20px; margin:0 auto; margin-bottom:20px; border-bottom:1px solid #ccc;}
+.signIn > div label{display: block; font-size:13px; margin-bottom: 5px;}
+.signIn > div input{padding:5px; width: 265px;}
+.signIn .sign{margin-bottom: 15px;}
+        .sign p {
+    display: none;
+    font-size: small;
+    font-weight: bold;
+    color: red;
+}
+.sign input + p{
+    display: inline-block;
+}
+.sign:hover input + p{
+    display: none;
+}
+.sign input + p + p {
+    display: none;
+} 
+.sign:hover input + p + p {
+    display: inline-block;
+}
+.check {
+    width: 9px !important;
+}

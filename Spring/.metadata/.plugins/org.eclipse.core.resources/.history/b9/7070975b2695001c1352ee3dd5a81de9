@@ -1,0 +1,42 @@
+
+.article {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 15px;
+    height: 240px;
+    width: 160px;
+    background-color: azure;
+    margin: 15px;
+}
+.article img {
+    display: inline-block;
+    margin: auto 0px;
+    padding: 15px;
+    width: 135px;
+    height: 110px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+}
+p {
+    font-family: 나눔고딕;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: yellow;
+}
+text, label > text {
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    display: block;
+}
+
+span {  
+    font-family: G마켓 산스 TTF;
+    font-size: 14px;
+    color:blue;
+}
